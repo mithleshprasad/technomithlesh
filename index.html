@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head> <title>Create|TECHNO-MITHLESH</title></head>
+<script type="text/javascript" ></script>
+<style type="text/css">
+body {
+      font-family: "Lato", sans-serif;
+	  }
+div {width:5%;
+      height:5px;
+	  background-color:black;
+	  margin:4px;
+	  }
+.sidenav {
+          height:100%;
+		  width: 0;
+		  position: fixed;
+		  z-index: 1;
+		  top: 0;
+		  left: 0;
+		  background-color: #111;
+		  overflow-x: hidden;
+		  transition:0.5s;
+		  padding-top:60px;
+		  }
+.sidenav a {
+            padding: 8px 8px 32px;
+			text-decoration: none;
+			font-size:25px;
+			color:#818181;
+			display: block:
+            transition:0.3s;
+           }
+.sidenav a:hover, .offcanvas a: focus{
+                                       color:#f1f1f1;
+									   }
+.sidenav .closebtn{									   
+                    position:absolute;
+					top: 0;
+					right: 25px;
+					font-size:36px;
+					margin-left:50px;
+					}
+@media screen and (max-height:450px){
+                                     .sidenav  {  padding-top:15px;}
+									 .sidenav a {font-size: 18px;}
+							}
+input[type=text],input[type=password] {
+           width:100%;
+		   padding: 12px 20px;
+		   margin:  8px 0;
+		   display: nline-block;
+		   border: 1px solid #ccc;
+		   box-sizing: border-box;
+		   
+		   }
+button {
+           background-color: #48d1cc;
+		   color: white;
+		   padding: 14px 20px;
+		   margin: 8px 0;
+		   border: none;
+		   cursor: pointer;
+		   width: 100%;
+		}
+		
+.cancelbtn {
+           width: auto;
+		   padding: 10px 18px;
+		   background-color: #4682b4;
+		   }
+
+.imgcontainer {
+              text-align: center;
+			  margin: 24px 0 12px 0;
+			  position: reelative;}
+			  
+img.avatar {
+            width: 10%;
+			border-radius: 300%;
+			}
+			
+.container {
+           padding: 16px;
+           }
+span.psw {
+          float: right;
+		  padding-top: 1076px;
+		  }
+		  
+.modal {
+          display: none;
+		  position: fixed;
+		  z-index: 1;
+		  left: 0;
+		  top: 0;
+		 
+		  width: auto;
+		  height: auto;
+		  overflow: auto;
+		  background-color: rgb(0,0,0);
+          background-color: rgba(0,0,0,4);
+		  padding-top: 60px;
+		  }
+.modal-content {
+              background-color: #fefefe;
+              margin: 5% auto 15% auto;
+              border: 1px solid #888;
+              width: 80%;
+              }	
+
+/* the close button (x)*/
+
+.close {
+            position: absolute;
+			right: 25px;
+			top: 0;
+			color: #000;
+			font-size: 35px;
+			font-weight: bold;
+		}
+.close:hover,.close:focus {
+                            color: red;
+							cursor: pointer;
+						}
+.animate {
+            -webkit-animation: animatezoom 0.1
+			animation: animatezoom 0.1s
+			}
+			
+@-webkit-keyframes animatezoom {
+                                from {-webkit-transform: scale(0)}
+								to {-webkit-transform: scale(1)}
+								}
+@keyframes animatezoom {
+                        form{transform: scale(0)}
+						to {transform: scale(1)}
+						}
+/* change style for span and cance button on extra small screens*/
+
+@media screen and(max-width: 300px)
+           span.psw {
+		            display: blue;
+					float: none;
+					}
+.cancelbtn {
+                width: 100%;
+			}
+			
+
+</style><body>
+<body bgcolor="red" >
+<div></div>
+<div></div>
+<div></div>
+<div id="mySidenav" class="sidenav"><a href="javascript:void(0)" class="closebtn" onclick="closenav()">x</a>
+<a href="#">ABOUT</a><br><br>
+<a href="#">SERVICES</a><br><br>
+<a href="#">CONTACT</a>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">Menu</span>
+
+<button onClick="document.getElementById('id01').style.display='block' " style="width:auto;">Login</button>
+<div id="id01" class="modal">
+
+<form class="modal-content animate" action="action_page.php">
+<div class="imgcontainer">
+<span onClick="document.getElementById('id01').style.display='none' " title="close modal"></span>
+<img src="profile.jpg" alt="Avatar" class="avatar">
+</div>
+
+<div class="container">
+  <label><b>Username</b></label>
+  <input type="text" placeholder="Enter Username" name="uname" required>
+  
+<label><b>Password</b></label>
+  <input type="text" placeholder="Enter Password" name="psw" required>
+
+
+<button type="Submit">Login</button><input type="checkbox" checked="checked">
+Remember Me</div>
+
+<div class="container" style="background-color:#f1f1f1"><button type="button" onClick="document.getElementById('id01').style.display='none' " class="cancelbtn">Cancel</button>
+
+<span class="psw">Forget<a href="#">Password?
+</a></span>
+</div>
+</form>
+</div>
+<script>
+function openNav(){
+                   document.getElementById("mySidenav").style.width="250px";}
+
+function closenav(){
+                   document.getElementById("mySidenav").style.width="0";}
+
+
+
+//get the modal
+var modal=document.getElementById('id01');
+
+//when the user click anywhere outside of the modal, close it
+
+widow.onClick=function(event){
+          if (event.target==modal){
+		  modal.style.display="none";
+		  }
+}
+
+</script>
+	
+	
+	
+	<center ><img src="nmithesh.JPG" width="100" height="100" alt="mithlesh maurya" border="10" style="color:green" ></center>
+	<!--Table one-->
+	<table width="100% border="10">
+	    <tr>
+		    <td width="40%" ><h1 style="color:green">TECHNO-MITHLESH</h1></td>
+			<td width="20%" style="float left" ><h1>Home Page</h1></td>
+	        <td width="40%"><h1 style="color:green">Update</h1>
+	    </td></tr>
+		</table>
+	<!--table two-->
+	<table width="100%" style="background-color:rgb(94, 126, 29);color:white" border="5px">
+	<tr>
+	    <td width="20%" style="fornt-size:10px:text-align:center"><a href="new.html" style="color:red:text-decoration:none"><strong>Home</strong></a></td>
+	    <td width="20%" style="fornt-size:10px:text-align:center"><a href="" style="color:red:text-decoration:none"><strong>AboutUs</strong></td>
+	    <td width="20%" style="fornt-size:10px:text-align:center"><strong>Resources</strong></td>
+	    <td width="20%" style="fornt-size:10px:text-align:center"><strong>Helps Video</strong></td>
+	    <td width="20%" style="fornt-size:10px:text-align:center"><a href="Enter detail.html" style="color:red:text-decoration:none"><strong>Contact Us</strong></a></td>
+	
+	
+	
+	
+	</tr>
+	</table>
+	
+	<!--Table three-->
+	<table width="60%" style="float:left">
+	<tr>
+	<td><a href="shipping address.html" style="color:blue:text-decoration:none">click here for Shipping Address</td>
+<td><a href="bbcnews.html" style="color:blue:text-decoration:none">click here for Bbcnews</td>
+<td><a href="enter detail.html" style="color:blue:text-decoration:none">click here for Enter Detail</td>
+<td><a href="https://www.google.com" style="color:blue:text-decoration:none">click here for google</a></td>
+<td><a href="https://www.facebook.com" style="color:blue:text-decoration:none">click here for facebook</a></td>
+<h1 style="color:green"> what is about network security ?</h1><p><style="fornt-size:20px:text-align:justify"><P>Network security consists of the policies and practices adopted to prevent and monitor unauthorized access, misuse, modification, or denial of a computer network and network-accessible resources. Network security involves the authorization of access to data in a network, which is controlled by the network administrator. Users choose or are assigned an ID and password or other authenticating information that allows them access to information and programs within their authority. Network security covers a variety of computer networks, both public and private, that are used in everyday jobs: conducting transactions and communications among businesses, government agencies and individuals. Networks can be private, such as within a company, and others which might be open to public access. Network security is involved in organizations, enterprises, and other types of institutions. It does as its title explains: it secures the network, as well as protecting and overseeing operations being done. The most common and simple way of protecting a network resource is by assigning it a unique name and a corresponding password.</p><br><br>
+	
+	
+	<h1 style="color:green"> what is about technology ?</h1><p><style="fornt-size:20px:text-align:justify"><P>This article is about the use and knowledge of techniques and processes for producing goods and services. For other uses, see Technology (disambiguation).
+
+A steam turbine with the case opened. Such turbines produce most of the electricity used today. Electricity consumption and living standards are highly correlated.[1] Electrification is believed to be the most important engineering achievement of the 20th century.
+Technology ("science of craft", from Greek τέχνη, techne, "art, skill, cunning of hand"; and -λογία, -logia[2]) is the sum of techniques, skills, methods, and processes used in the production of goods or services or in the accomplishment of objectives, such as scientific investigation. Technology can be the knowledge of techniques, processes, and the like, or it can be embedded in machines to allow for operation without detailed knowledge of their workings. Systems (e.g. machines) applying technology by taking an input, changing it according to the system's use, and then producing an outcome are referred to as technology systems or technological systems.
+
+The simplest form of technology is the development and use of basic tools. The prehistoric discovery of how to control fire and the later Neolithic Revolution increased the available sources of food, and the invention of the wheel helped humans to travel in and control their environment. Developments in historic times, including the printing press, the telephone, and the Internet, have lessened physical barriers to communication and allowed humans to interact freely on a global scale.
+
+Technology has many effects. It has helped develop more advanced economies (including today's global economy) and has allowed the rise of a leisure class. Many technological processes produce unwanted by-products known as pollution and deplete natural resources to the detriment of Earth's environment. Innovations have always influenced the values of a society and raised new questions in the ethics of technology. Examples include the rise of the notion of efficiency in terms of human productivity, and the challenges of bioethics.
+
+Philosophical debates have arisen over the use of technology, with disagreements over whether technology improves the human condition or worsens it. Neo-Luddism, anarcho-primitivism, and similar reactionary movements criticize the pervasiveness of technology, arguing that it harms the environment and alienates people; proponents of ideologies such as transhumanism and techno-progressivism view continued technological progress a<tr></td></p><br><br>
+
+	
+	<hr></p>
+	
+	
+	
+	<p><h1 style="color:green"> what is about computer ?</h1><p><style="fornt-size:20px:text-align:justify"><p>For other uses, see Computer (disambiguation).
+Computer
+Acer Aspire 8920 Gemstone.jpgColumbia Supercomputer - NASA Advanced Supercomputing Facility.jpgIntertec Superbrain.jpg
+2010-01-26-technikkrempel-by-RalfR-05.jpgThinking Machines Connection Machine CM-5 Frostburg 2.jpgG5 supplying Wikipedia via Gigabit at the Lange Nacht der Wissenschaften 2006 in Dresden.JPG
+DM IBM S360.jpgAcorn BBC Master Series Microcomputer.jpgDell PowerEdge Servers.jpg
+Computers and computing devices from various eras
+A computer is a machine that can be instructed to carry out sequences of arithmetic or logical operations automatically via computer programming. Modern computers have the ability to follow generalized sets of operations, called programs. These programs enable computers to perform an extremely wide range of tasks. A "complete" computer including the hardware, the operating system (main software), and peripheral equipment required and used for "full" operation can be referred to as a computer system. This term may as well be used for a group of computers that are connected and work together, in particular a computer network or computer cluster.
+
+Computers are used as control systems for a wide variety of industrial and consumer devices. This includes simple special purpose devices like microwave ovens and remote controls, factory devices such as industrial robots and computer-aided design, and also general purpose devices like personal computers and mobile devices such as smartphones. The Internet is run on computers and it connects hundreds of millions of other computers and their users.
+
+Early computers were only conceived as calculating devices. Since ancient times, simple manual devices like the abacus aided people in doing calculations. Early in the Industrial Revolution, some mechanical devices were built to automate long tedious tasks, such as guiding patterns for looms. More sophisticated electrical machines did specialized analog calculations in the early 20th century. The first digital electronic calculating machines were developed during World War II. The first semiconductor transistors in the late 1940s were followed by the silicon-based MOSFET (MOS transistor) and monolithic integrated circuit (IC) chip technologies in the late 1950s, leading to the microprocessor and the microcomputer revolution in the 1970s. The speed, power and versatility of computers have been increasing dramatically ever since then, with MOS transistor counts increasing at a rapid pace (as predicted by Moore's law), leading to the Digital Revolution during the late 20th to early 21st centuries.
+
+Conventionally, a modern computer consists of at least one processing element, typically a central processing unit (CPU) in the form of a metal-oxide-semiconductor (MOS) microprocessor, along with some type of computer memory, typically MOS semiconductor memory chips. The processing element carries out arithmetic and logical operations, and a sequencing and control unit can change the order of operations in response to stored information. Peripheral devices include input devices (keyboards, mice, joystick, etc.), output devices (monitor screens, printers, etc.), and input/output devices that perform both functions (e.g., the 2000s-era touchscreen). Peripheral devices allow information to be retrieved from an external source and they enable the result of operations to be saved and</p>
+
+
+	 	<p><h1 style="color:green"> what is about information ?</h1><p><style="fornt-size:20px:text-align:justify"><p>Information can be thought of as the resolution of uncertainty; it is that which answers the question of "What an entity is" and thus defines both its essence and nature of its characteristics. The concept of information has different meanings in different contexts.[1] Thus the concept becomes related to notions of constraint, communication, control, data, form, education, knowledge, meaning, understanding, mental stimuli, pattern, perception, representation, and entropy.
+
+Information is associated with data, as data represent values attributed to parameters, and information is data in context and with meaning attached. Information also relates to knowledge, as knowledge signifies understanding of an abstract or concrete concept.[2][better source needed]
+
+In terms of communication, information is expressed either as the content of a message or through direct or indirect observation. That which is perceived can be construed as a message in its own right, and in that sense, information is always conveyed as the content of a message.
+
+Information can be encoded into various forms for transmission and interpretation (for example, information may be encoded into a sequence of signs, or transmitted via a signal). It can also be encrypted for safe storage and communication.
+
+The uncertainty of an event is measured by its probability of occurrence and is inversely proportional to that. The more uncertain an event, the more information is required to resolve uncertainty of that event. The bit is a typical unit of information, but other units such as the nat may be used. For example, the information encoded in one "fair" coin flip is log2(2/1) = 1 bit, and in two fair coin flips is log2(4/1) = 2 bits.
+</p>
+	
+	
+	
+	</tr>
+	</table>
+	<!--Table Four_-->
+	<table  width="30%">
+	<tr><td width="40%" style="fornt-size:25px;text-align:center"><p style="text-align:center"><h1><ins></ins>Latest Update</h1></td><br></tr><hr>
+	<tr><td  width="40%" style="fornt-size:20px;text-align:center;font-family:"><a href="https://commons.wikimedia.org/wiki/File:Guicciardini_M_Francesco_La_Historia_dItalia.jpg#/media/File:Guicciardini_M_Francesco_La_Historia_dItalia.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Guicciardini_M_Francesco_La_Historia_dItalia.jpg" alt="Guicciardini M Francesco La Historia dItalia.jpg"></a><br>Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=664067">Link</a></p> <p>this is the number one<br>this is the number two<br>this is the number three<br>this is the number four</p>
+	</td>
+	</tr>
+	
+</table>
+
+	</body>
+	
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</html>
